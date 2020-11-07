@@ -1,0 +1,200 @@
+/* Global */
+body {
+    font-family: monospace, arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  } 
+  .container {
+    width: 80%; 
+    margin: auto;
+    height: 0px;
+  }
+  .footer container{
+    width: 15px;
+    height: 15px;
+    background-color: yellow;
+  }
+  
+  .footer .container p {
+    color: black;
+    text-align:center;
+  }
+/* fim GLOBAL */
+
+/* Header */
+  .header {
+    background-color: white;
+    height: 55px;
+    padding-top: 0px;
+    border-top: 5px solid black;
+    border-left: relative solid black;
+  }
+  .title-header img{
+    height: 55px;
+    position: relative;
+    margin-left: 28px;
+    padding-top: 3px;
+  } 
+  /* fim HEADER */
+
+  /* NAV */
+.nav ul
+{
+  margin: 0;
+}
+.title-header{
+    float: left;
+  }
+  .nav{
+    float: center;
+  }
+  .nav a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-block-end: auto;
+  }
+  .nav li{
+    display: inline-block;
+    padding: 20px;
+    padding: 20px 30px 0 40px;
+  }
+  .nav img {
+    height: 18px;
+    width: 18px;
+
+  }
+  /* Fim NAV */
+
+  /* SHOWCASE1 */
+.showcase{ 
+  background-image: url(../imagem/showcase1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color:white;
+  text-align: center;
+  min-height: 627px;
+}
+
+.showcase h1{
+  margin: 10px;  
+  font-size: 55px;
+  padding-top: 10px;
+}
+
+.showcase p{
+  font-size: 22px;
+  text-align: left;
+}
+.showcase img{
+  text-align:center;
+  width: 1100px;
+  height: 600px;
+  border-left:10px;
+}
+
+/* Fim SHOWCASE */
+
+/* INICIO SHOWCASE2 */
+
+.showcase2{ 
+  background-image: url(../imagem/showcase2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  min-height: 627px;
+  margin:auto;
+}
+.showcase2 p {
+  font-size: 22px;
+  margin-left: 22px;
+  text-align: left;
+}
+/* FIM SHOWCASE2 */
+
+ /* QUEM SOMOS */
+ .sobre{ 
+  background-image: url(../imagem/quem-somos.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color:#FFA500;
+  text-align: center;
+  min-height: 560px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  
+}
+
+.sobre h1{
+  margin: 0px;  
+  font-size: 55px;
+  padding-top: 150px;
+}
+
+.sobre p{
+  font-size: 25px;
+}
+
+.footer container{
+  width: 15px;
+  height: 15px;
+  background-color: yellow;
+
+}
+
+/* Fim QUEM SOMOS */
+
+
+/* Login */
+
+.login {
+  background-image: url(../imagem/login.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color:  white;
+  text-align: "float: left";
+  min-height: 560px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  
+}
+
+.login h1{
+  margin: 0;
+  text-align: top;
+  font-size: 60px;
+}
+
+.login form{
+  text-align: center;
+}
+
+.login input{
+  text-align: center;
+  height: 25px;
+  width: 450px;
+}
+
+.btn-blue{
+  background-color: #29e2c1;
+  color: black;
+  border-bottom: #29e2c1;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  text-align: center;
+  width: 180px;
+  height: 30px;
+}
+.footer container{
+  width: 15px;
+  height: 15px;
+  background-color: yellow;
+
+}
+/* FIM do Login */
+
+
