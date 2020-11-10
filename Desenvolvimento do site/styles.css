@@ -1,6 +1,6 @@
 /* Global */
 body {
-    font-family: monospace, arial, sans-serif;
+    font-family: 'Special elite', arial, sans-serif;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -11,62 +11,67 @@ body {
     margin: auto;
     height: 0px;
   }
-  .footer container{
-    width: 15px;
-    height: 15px;
-    background-color: yellow;
-  }
-  
-  .footer .container p {
-    color: black;
-    text-align:center;
-  }
 /* fim GLOBAL */
-
 /* Header */
   .header {
     background-color: white;
-    height: 55px;
+    height: 66px;
     padding-top: 0px;
     border-top: 5px solid black;
     border-left: relative solid black;
   }
   .title-header img{
-    height: 55px;
+    height: 57px;
     position: relative;
-    margin-left: 28px;
-    padding-top: 3px;
+    margin-left: -100px;
+    padding-top: 2px;
   } 
   /* fim HEADER */
 
   /* NAV */
-.nav ul
-{
+ .nav ul {
   margin: 0;
+  width: 100%;
 }
+
 .title-header{
     float: left;
-  }
-  .nav{
+}
+
+.nav {
     float: center;
-  }
-  .nav a{
+    width: 100%;
+}
+  
+.nav a{
     text-decoration: none;
     color: black;
     text-transform: uppercase;
     font-size: 20px;
-    margin-block-end: auto;
-  }
-  .nav li{
+    font-family: 'Special Elite';
+}
+
+.nav h2 {
+    font-size: 22px;
+    text-align:center;
+    margin-left: -90px;
+}
+.nav li{
     display: inline-block;
-    padding: 20px;
-    padding: 20px 30px 0 40px;
-  }
-  .nav img {
+    padding: 0px 25px 0 30px;
+}
+
+ .nav img {
     height: 18px;
     width: 18px;
-
-  }
+}
+  .header audio {
+    width: 197px;
+    height: 50px;
+    border-radius: 10px;
+    float:right;
+    padding: 8px;
+}
   /* Fim NAV */
 
   /* SHOWCASE1 */
@@ -80,7 +85,7 @@ body {
 }
 
 .showcase h1{
-  margin: 10px;  
+  margin: 0px;  
   font-size: 55px;
   padding-top: 10px;
 }
@@ -189,12 +194,21 @@ body {
   width: 180px;
   height: 30px;
 }
-.footer container{
-  width: 15px;
-  height: 15px;
-  background-color: yellow;
-
-}
 /* FIM do Login */
+
+/* Inicio Footer */
+.footer {
+  background-color: black;
+  height: 27px;
+}
+
+.footer p {
+  text-align: center;
+  margin: 0px;
+  padding: 3px;
+  color: white;
+  font-weight: 100;
+}
+/* Fim Footer */
 
 
