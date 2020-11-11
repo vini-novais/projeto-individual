@@ -47,7 +47,7 @@ body {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 19px;
     font-family: 'Special Elite';
 }
 
@@ -79,7 +79,6 @@ body {
   background-image: url(../imagem/showcase1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  color:white;
   text-align: center;
   min-height: 627px;
 }
@@ -87,18 +86,30 @@ body {
 .showcase h1{
   margin: 0px;  
   font-size: 55px;
-  padding-top: 10px;
+  color:white;
 }
 
 .showcase p{
   font-size: 22px;
   text-align: left;
+  color:white;
 }
-
 .album{
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 1068px;
+  height: 285px;
+  border-radius: 10px;
 }
+.album img {
+  width: 345px;
+  height: 229px;
+  padding: 1px;
+  margin-top: 25px;
+  border-radius: 10px;
+  border-top: 5px;
+  border: 1px solid #dbdbdb;
 
+}
 /* Fim SHOWCASE */
 
 /* INICIO SHOWCASE2 */
@@ -110,13 +121,40 @@ body {
   color: white;
   text-align: center;
   min-height: 627px;
-  margin:auto;
   padding-top: 5px;
 }
 .showcase2 p {
   font-size: 22px;
-  margin-left: 22px;
   text-align: center;
+  color: white;
+  
+}
+
+.album2 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.showcase2 .container video {
+  width: 706px;
+  height: 250px;
+  float:left;
+}
+.info {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 1068px;
+  height: 214px;
+  border-radius: 10px;
+}
+.info p {
+  font-size: 20px;
+  text-align: left;
+  color:white;
+  margin: 26px 541px 0 12px;
+}
+.info img {
+  width: 100px;
+  height: 100px;
+  float: right;
+  display: none;
 }
 /* FIM SHOWCASE2 */
 
@@ -209,5 +247,3 @@ body {
   font-weight: 100;
 }
 /* Fim Footer */
-
-
