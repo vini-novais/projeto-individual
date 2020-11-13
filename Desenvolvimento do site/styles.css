@@ -138,10 +138,12 @@ body {
 .showcase2 p {
   font-size: 22px;
   text-align: center;
-  color: white;
-  
+  color: white; 
 }
-
+.showcase2 h5 {
+  font-size: 28px;
+  margin: 15px;
+}
 .album2 {
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -149,6 +151,12 @@ body {
   width: 706px;
   height: 250px;
   float:left;
+}
+.sabota {
+  width: 100px;
+  height: 100px;
+  padding: 0px 96px 0px 0px;
+
 }
 .info {
   background-color: rgba(0, 0, 0, 0.5);
@@ -263,13 +271,13 @@ body {
 /* Inicio Footer */
 .footer {
   background-color: black;
-  height: 27px;
+  height: 45px;
 }
 
 .footer p {
   text-align: center;
   margin: 0px;
-  padding: 3px;
+  padding: 12px;
   color: white;
   font-weight: 100;
 }
