@@ -11,6 +11,24 @@ body {
     margin: auto;
     height: 0px;
   }
+  .glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px white, 0 0 40px white,
+       0 0 50px yellow, 0 0 60px white, 0 0 70px black;
+    }
+    to {
+      text-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px black, 0 0 50px black,
+       0 0 60px black, 0 0 70px black, 0 0 80px white;
+    }
+  }
 /* fim GLOBAL */
 /* Header */
   .header {
@@ -127,7 +145,7 @@ body {
 /* INICIO SHOWCASE2 */
 
 .showcase2{ 
-  background-image: url(../imagem/showcase2.jpg);
+  background-image: url(../imagem/bkteste.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -141,8 +159,8 @@ body {
   color: white; 
 }
 .showcase2 h5 {
-  font-size: 28px;
-  margin: 15px;
+  font-size: 35px;
+  margin: 19px;
 }
 .album2 {
   background-color: rgba(0, 0, 0, 0.5);
@@ -151,6 +169,7 @@ body {
   width: 706px;
   height: 250px;
   float:left;
+  margin: 4px;
 }
 .sabota {
   width: 100px;
@@ -159,6 +178,7 @@ body {
 
 }
 .info {
+  background-image: url(../imagem/back1.jpg);
   background-color: rgba(0, 0, 0, 0.5);
   width: 1072px;
   height: 241px;
@@ -190,8 +210,43 @@ body {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
-
 /* FIM SHOWCASE2 */
+
+/* INICIO SHOWCASE3 */
+.showcase3 {
+  background-image: url(../imagem/showcase3.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  min-height: 647px;
+  padding-top: 5px;
+}
+.showcase3 h5 {
+  margin: 0px;  
+  font-size: 50px;
+  color:white;
+}
+.showcase3 p {
+  font-size: 22px;
+  text-align: left;
+  color:white;
+}
+.info2 {
+  text-align: left;
+  width: 1069px;
+  height: 283px;
+  background-image: url(../imagem/duelo02-10-672x372.jpg);
+  border: 1px solid black;
+}
+
+.info2 video {
+  width: 500px;
+  height: 250px;
+  float:left;
+  margin: 17px;
+}
+/* FIM SHOWCASE3 */
 
  /* QUEM SOMOS */
  .sobre{ 
@@ -282,21 +337,3 @@ body {
   font-weight: 100;
 }
 /* Fim Footer */
-.glow {
-  font-size: 80px;
-  color: #fff;
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px white, 0 0 40px white,
-     0 0 50px yellow, 0 0 60px white, 0 0 70px black;
-  }
-  to {
-    text-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px black, 0 0 50px black,
-     0 0 60px black, 0 0 70px black, 0 0 80px white;
-  }
-}
