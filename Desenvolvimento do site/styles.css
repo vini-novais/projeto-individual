@@ -238,48 +238,95 @@ body {
   height: 283px;
   background-image: url(../imagem/duelo02-10-672x372.jpg);
   border: 1px solid black;
+  border-radius: 10px;
 }
 
 .info2 video {
-  width: 500px;
+  width: 400px;
   height: 250px;
   float:left;
   margin: 17px;
 }
+.info2 iframe {
+  width: 400px;
+  height: 250px;
+  float:left;
+  margin: 17px;
+}
+.info2 b {
+  font-size: 20px;
+  justify-content: flex-start;
+  display: flex;
+  color:black;
+  padding: 76px 0px 0px 23px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.info2 img {
+  width: 110px;
+  height: 110px;
+  margin: 5px 5px 5px 25px;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3;
+}
+.info2 img:hover {
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
 /* FIM SHOWCASE3 */
 
- /* QUEM SOMOS */
- .sobre{ 
-  background-image: url(../imagem/quem-somos.jpg);
+ /* QUEM SOMOS  */
+ /* SHOWCASE 4 */
+ .showcase4 { 
+  background-image: url(../imagem/showcase4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  color:#FFA500;
   text-align: center;
-  min-height: 560px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  
-}
+  min-height: 627px;
 
-.sobre h1{
-  margin: 0px;  
-  font-size: 55px;
-  padding-top: 13px;
 }
-
-.sobre p{
-  font-size: 25px;
+.showcase4 p {
+  font-size: 22px;
+  text-align: left;
+  color:white;
+  margin: 0;
+  padding: 10px 0px 0px 0px;
 }
+.showcase4 h3 {
+  font-size: 22px;
+  text-align: left;
+  color:white;
+}
+.equipe {
+  width: 690px;
+  height: 260px;
+  background-color: rgba(0, 0, 0, 0.5);
+  float: right;
+  margin-right: 154px;
 
-.footer container{
-  width: 15px;
-  height: 15px;
-  background-color: yellow;
+}
+.equipe img {
+  width: 250px;
+  height: 231px;
+  border: 1px solid black;
+  float: left;
+  margin: 14px 0px 0px 13px;
+}
+.equipe h3 {
+  float: right;
+  font-size: 20px;
+  margin-right: 44px;
+}
+.sobre p {
+  font-size: 15px;
+  float: center;
+  color: white;
 
 }
 
 /* Fim QUEM SOMOS */
-
+/* SHOWCASE 4 */
 
 /* Login */
 
