@@ -29,6 +29,7 @@ body {
        0 0 60px black, 0 0 70px black, 0 0 80px white;
     }
   }
+ 
 /* fim GLOBAL */
 /* Header */
   .header {
@@ -103,7 +104,9 @@ body {
   text-align: center;
   min-height: 627px;
 }
-
+.showcase .container span {
+  color:gold;
+}
 .showcase h1{
   margin: 0px;  
   font-size: 55px;
@@ -145,7 +148,7 @@ body {
 /* INICIO SHOWCASE2 */
 
 .showcase2{ 
-  background-image: url(../imagem/bkteste.jpg);
+  background-image: url(../imagem/showcase2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -153,6 +156,10 @@ body {
   min-height: 627px;
   padding-top: 5px;
 }
+.showcase2 .container span {
+  color:gold;
+}
+
 .showcase2 p {
   font-size: 22px;
   text-align: center;
@@ -178,7 +185,6 @@ body {
 
 }
 .info {
-  background-image: url(../imagem/back1.jpg);
   background-color: rgba(0, 0, 0, 0.5);
   width: 1072px;
   height: 241px;
@@ -284,7 +290,10 @@ body {
   background-repeat: no-repeat;
   text-align: center;
   min-height: 627px;
-
+}
+.showcase4 img {
+  width: 200px;
+  height: 200px;
 }
 .showcase4 p {
   font-size: 22px;
@@ -293,81 +302,211 @@ body {
   margin: 0;
   padding: 10px 0px 0px 0px;
 }
-.showcase4 h3 {
+.showcase4 .container h2 {
   font-size: 22px;
   text-align: left;
   color:white;
+  margin-left: 398px;
+  margin-bottom: 9px;
+  margin-top: 5px;
 }
 .equipe {
   width: 690px;
-  height: 260px;
+  height: 244px;
   background-color: rgba(0, 0, 0, 0.5);
-  float: right;
-  margin-right: 154px;
-
+  margin-left: 170px;
 }
 .equipe img {
   width: 250px;
-  height: 231px;
+  height: 220px;
   border: 1px solid black;
   float: left;
-  margin: 14px 0px 0px 13px;
+  margin: 11px 50px 0px 13px;
 }
 .equipe h3 {
   float: right;
-  font-size: 20px;
-  margin-right: 44px;
+  font-size: 19px;
+  margin-right: 58px;
+  color:white;
 }
 .sobre p {
   font-size: 15px;
-  float: center;
   color: white;
-
+  margin-right: 42px;
 }
-
-/* Fim QUEM SOMOS */
 /* SHOWCASE 4 */
 
-/* Login */
-
-.login {
-  background-image: url(../imagem/login.jpg);
+/* SHOWCASE 5 */
+.showcase5 {
+  background-image: url(../imagem/showcase5.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  color:  white;
-  text-align: "float: left";
-  min-height: 560px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  
+  text-align: center;
+  min-height: 627px;
 }
-
-.login h1{
+.showcase5 h2 {
+  font-size: 34px;
+  color:white;
   margin: 0;
-  text-align: top;
-  font-size: 60px;
+  padding-top: 27px;
 }
+.sobremim {
+  width: 1026px;
+  height: 100px;
+  background-color:rgba(0, 0, 0, 0.1);
+  margin-top: 46px;
+  border-radius: 20px;
+  margin-left: 76px;
 
-.login form{
-  text-align: center;
 }
+.sobremim img {
+  width: 95px;
+  height: 95px;
+  float: left;
+}
+.sobremim p {
+  float: top;
+  font-size: 15px;
+  color: white;
+  margin-top: 83px;
+  margin-left: 91px;
+  margin-right: 196px;
+}
+.sobremim2 {
+  width: 1026px;
+  height: 100px;
+  background-color:rgba(0, 0, 0, 0.1);
+  margin-top: 46px;
+  border-radius: 20px;
+  margin-left: 85px;
 
-.login input{
-  text-align: center;
-  height: 25px;
-  width: 450px;
 }
+.sobremim2 img {
+  width: 95px;
+  height: 95px;
+  float: left;
+}
+.sobremim2 p {
+  float: top;
+  font-size: 15px;
+  color: white;
+  margin-top: 22px;
+  margin-left: 91px;
+  margin-right: 196px;
+}
+.sobremim3 {
+  width: 1026px;
+  height: 100px;
+  background-color:rgba(0, 0, 0, 0.1);
+  margin-top: 46px;
+  border-radius: 20px;
+  margin-left: 85px;
 
-.btn-blue{
-  background-color: #29e2c1;
-  color: black;
-  border-bottom: #29e2c1;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
-  text-align: center;
-  width: 180px;
-  height: 30px;
 }
+.sobremim3 img {
+  width: 95px;
+  height: 95px;
+  float: left;
+}
+.sobremim3 p {
+  float: top;
+  font-size: 15px;
+  color: white;
+  margin-top: 22px;
+  margin-left: 91px;
+  margin-right: 196px;
+}
+/* SHOWCASE 5 */
+/* Fim QUEM SOMOS */
+
+
+/* Inicio Login */
+
+.showcase6 {
+  background-image: url(../imagem/showcase6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  min-height: 697px;
+  font-family: "Comfortaa", sans-serif
+ }
+ .login img {
+   width: 100px;
+   height: 100px;
+ }
+ .login {
+   width: 320px;
+   height: 420px;
+   border: 2px solid #000;
+   border-radius: 80px 0px 80px 0px;
+   color: #fff;
+   background-color: rgba(0, 0, 5, 0.8);
+   top: 50%;
+   left: 50%;
+   position: absolute;
+   transform: translate(-50%, -50%);
+   box-sizing: border-box;
+   padding: 68px 28px;
+ }
+ .usuario {
+   border-radius: 50%;
+   position: absolute;
+   top: -50px;
+   left: 112px;
+ }
+ h6 {
+   margin: 0;
+   padding-top:0;
+   padding-left: 0;
+   padding-bottom: 20px;
+   letter-spacing: 10px;
+   text-transform: uppercase;
+   text-align: center;
+   font-size: 25px;
+ }
+ .login p {
+   margin: 0;
+   padding: 0;
+   font-weight: bold;
+ }
+ .login input {
+   width: 100%;
+   margin-bottom: 21px;
+ }
+ .login input[type="login"], input[type="senha"] {
+   border: none;
+   border-bottom: 1px solid white;
+   background:transparent;
+   outline: none;
+   height: 40px;
+   color: white;
+   font-size: 16px;
+ }
+ .login input[type="submit"] {
+   border: none;
+   outline: none;
+   height: 35px;
+   color: white;
+   border-radius: 20px;
+   transition: 0.2s;
+ }
+ .login input[type="submit"]:hover {
+   cursor:pointer;
+   background: #ff4d4d;
+   transition: 0.2s
+ }
+ .login a {
+   font-weight: bold;
+   text-decoration: none;
+   font-size: 12px;
+   line-height: 20px;
+   color: #4b4b4b;
+   transition: 0.2s;
+ }
+ .login a:hover {
+   transition: 0.2s;
+   color: #ff4d4d;
+ }
 /* FIM do Login */
 
 /* Inicio Footer */
