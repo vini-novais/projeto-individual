@@ -118,13 +118,13 @@ body {
   text-align: left;
   color:white;
 }
-.album{
+.album1{
   background-color: rgba(0, 0, 0, 0.5);
   width: 1068px;
   height: 285px;
   border-radius: 10px;
 }
-.album img {
+.album1 img {
   width: 345px;
   height: 229px;
   padding: 1px;
@@ -137,7 +137,7 @@ body {
   transition: all 0.3;
 }
 
-.album img:hover {
+.album1 img:hover {
   -moz-transform: scale(1.5);
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
@@ -482,19 +482,21 @@ body {
    color: white;
    font-size: 16px;
  }
- .login input[type="submit"] {
-   border: none;
-   outline: none;
-   height: 35px;
-   color: white;
-   border-radius: 20px;
-   transition: 0.2s;
- }
- .login input[type="submit"]:hover {
-   cursor:pointer;
-   background: #ff4d4d;
-   transition: 0.2s
- }
+ .login button {
+  border: none;
+  outline: none;
+  height: 35px;
+  color: white;
+  border-radius: 20px;
+  transition: 0.2s;
+  margin-left: -1px;
+  width: 210px;
+}
+.login button:hover {
+  cursor:pointer;
+  background: #ff4d4d;
+  transition: 0.2s;
+}
  .login a {
    font-weight: bold;
    text-decoration: none;
@@ -505,9 +507,161 @@ body {
  }
  .login a:hover {
    transition: 0.2s;
-   color: #ff4d4d;
+   color: white;
  }
 /* FIM do Login */
+
+/* Inicio cadastro */
+.showcase7 {
+  background-image: url(../imagem/showcase7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  min-height: 697px;
+  font-family: "Comfortaa", sans-serif
+ }
+ .cadastro img {
+   width: 100px;
+   height: 100px;
+ }
+ .cadastro {
+   width: 320px;
+   height: 465px;
+   border: 2px solid #000;
+   border-radius: 80px 0px 80px 0px;
+   color: #fff;
+   background-color: rgba(0, 0, 5, 0.8);
+   top: 50%;
+   left: 50%;
+   position: absolute;
+   transform: translate(-50%, -50%);
+   box-sizing: border-box;
+   padding: 68px 28px;
+ }
+ .usuario {
+   border-radius: 50%;
+   position: absolute;
+   top: -50px;
+   left: 112px;
+ }
+ h6 {
+   margin: 0;
+   padding-top:0;
+   padding-left: 0;
+   padding-bottom: 20px;
+   letter-spacing: 10px;
+   text-transform: uppercase;
+   text-align: center;
+   font-size: 25px;
+ }
+ .cadastro p {
+   margin: 0;
+   padding: 0;
+   font-weight: bold;
+ }
+ .cadastro input {
+   width: 100%;
+   margin-bottom: 21px;
+ }
+ .cadastro input[type="email"] {
+  border: none;
+  border-bottom: 1px solid white;
+  background:transparent;
+  outline: none;
+  height: 40px;
+  color: white;
+  font-size: 16px;
+ }
+ .cadastro input[type="cadastro"], input[type="senha"] {
+   border: none;
+   border-bottom: 1px solid white;
+   background:transparent;
+   outline: none;
+   height: 40px;
+   color: white;
+   font-size: 16px;
+ }
+ .cadastro button {
+   border: none;
+   outline: none;
+   height: 35px;
+   color: white;
+   border-radius: 20px;
+   transition: 0.2s;
+   margin-left: -1px;
+   width: 210px;
+ }
+ .cadastro button:hover {
+   cursor:pointer;
+   background: #ff4d4d;
+   transition: 0.2s;
+ }
+ .cadastro a {
+   font-weight: bold;
+   text-decoration: none;
+   font-size: 12px;
+   line-height: 20px;
+   color: #4b4b4b;
+   transition: 0.2s;
+   margin-left: 13px;
+ }
+ .cadastro a:hover {
+   transition: 0.2s;
+   color: white;
+ }
+/* Fim cadastro */
+
+/* Inicio Albuns */
+.showcase8{
+    background-image: url(../imagem/showcase8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    min-height: 627px;
+}
+.showcase8 .container h2 {
+  font-size: 34px;
+  text-align:center;
+  margin: 0px;
+  padding-top: 15px;
+}
+.album3 {
+  width: 1108px;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align:center;
+  margin-top: 30px;
+}
+.album3 img {
+  width: 310px;
+  height: 220px;
+  border: 1px solid black;
+  float: left;
+  margin: 11px 50px 0px 13px;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3;
+}
+
+.album3 img:hover {
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.album3 h3 {
+  float: right;
+  font-size: 19px;
+  margin-right: 58px;
+  color:white;
+}
+.djonga p {
+  font-size: 15px;
+  color: white;
+  margin-right: 42px;
+  margin:0px;
+}
+/* Fim albuns */
 
 /* Inicio Footer */
 .footer {
