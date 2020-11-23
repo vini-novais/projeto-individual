@@ -1,0 +1,165 @@
+/* Global */
+body {
+    font-family: 'Special elite', arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  } 
+  .container {
+    width: 80%; 
+    margin: auto;
+    height: 0px;
+  }
+  .glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px white, 0 0 40px white,
+       0 0 50px yellow, 0 0 60px white, 0 0 70px black;
+    }
+    to {
+      text-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px black, 0 0 50px black,
+       0 0 60px black, 0 0 70px black, 0 0 80px white;
+    }
+  }
+ 
+/* fim GLOBAL */
+/* Header */
+  .header {
+    background-color: white;
+    height: 66px;
+    padding-top: 0px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+  }
+  .title-header img{
+    height: 57px;
+    position: relative;
+    margin-left: -100px;
+    padding-top: 2px;
+  } 
+  /* fim HEADER */
+
+  /* NAV */
+ .nav ul {
+  margin: 0;
+  width: 100%;
+}
+.title-header{
+    float: left;
+}
+
+.nav {
+    float: center;
+    width: 100%;
+}
+  
+.nav a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-family: 'Special Elite';
+}
+
+.nav h2 {
+    font-size: 22px;
+    text-align:center;
+    margin-left: -90px;
+}
+.nav li{
+    display: inline-block;
+    padding: 0px 25px 0 30px;
+} 
+.nav li:hover {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+ .nav img {
+    height: 18px;
+    width: 18px;
+}
+  .header audio {
+    width: 197px;
+    height: 50px;
+    border-radius: 10px;
+    float:right;
+    padding: 8px;
+}
+  /* Fim NAV */
+  /* Inicio Albuns */
+.showcase8{
+    background-image: url(../imagem/showcase8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    min-height: 627px;
+}
+.showcase8 .container h2 {
+  font-size: 34px;
+  text-align:center;
+  margin: 0px;
+  padding-top: 15px;
+}
+.album3 {
+  width: 1108px;
+  height: 244px;
+  background-color: rgba(0, 0, 5, 0.8);
+  text-align:center;
+  margin-top: 30px;
+}
+.album3 img {
+  width: 310px;
+  height: 220px;
+  border: 1px solid black;
+  float: left;
+  margin: 11px 14px 0px 13px;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3;
+}
+
+.album3 img:hover {
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+.djonga h3 {
+  float: top;
+  font-size: 22px;
+  color:white;
+  padding-top: 16px;
+  margin: 0px;
+}
+.djonga p {
+  font-size: 16px;
+  color: white;
+  margin:0px;
+  display: flex;
+  width: 761px;
+  padding-top: 14px;
+}
+.racionais h3 {
+  float: top;
+  font-size: 22px;
+  color:white;
+  padding-top: 16px;
+  margin: 0px;
+}
+.racionais p {
+  font-size: 16px;
+  color: white;
+  margin:0px;
+  display: flex;
+  width: 761px;
+  padding-top: 12px;
+}
+/* Fim albuns */

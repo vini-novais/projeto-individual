@@ -1,0 +1,14 @@
+/* Inicio Footer */
+.footer {
+    background-color: black;
+    height: 45px;
+  }
+  
+  .footer p {
+    text-align: center;
+    margin: 0px;
+    padding: 12px;
+    color: white;
+    font-weight: 100;
+  }
+  /* Fim Footer */
