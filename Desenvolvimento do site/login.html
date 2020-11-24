@@ -20,9 +20,9 @@
                 <form>
 
                     <p>Usuário</p>
-                    <input type="login" placeholder="Insira seu nome de usuário">
+                    <input type="usuario" id="usuario" onkeyup="validar_usuario()" placeholder="Insira seu nome de usuário">
                     <p>Senha</p>
-                    <input type="senha" placeholder="Insira sua senha">
+                    <input type="password" id="senha" onkeyup="validar_senha()" placeholder="Insira sua senha">
                     <button><a href='albuns.html'>Login</a></button>
                     <a href="">Esqueceu sua senha?</a> <br>
                     <a href="cadastro.html">Ainda não possui uma conta?</a>
@@ -36,7 +36,22 @@
 
 </html>
 <script>
-    function redirecionar() {
+    function validar_senha() {
+        var senhaa = senha.value;
+        if (senhaa.length >= 8) {
+            senha.style = `border-color: green`;
 
+        } else {
+            senha.style = 'border-color:red';
+        }
+    }
+    function validar_usuario() {
+        var usuarioo = usuario.value;
+        if (usuarioo.length >= 5) {
+            usuario.style = `border-color: green`;
+
+        } else {
+            usuario.style = 'border-color:red';
+        }
     }
 </script>

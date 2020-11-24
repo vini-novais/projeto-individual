@@ -92,7 +92,7 @@ body {
     color: white;
     font-size: 16px;
    }
-   .cadastro input[type="cadastro"], input[type="senha"] {
+   .cadastro input[type="usuario"], input[type="password"] {
      border: none;
      border-bottom: 1px solid white;
      background:transparent;

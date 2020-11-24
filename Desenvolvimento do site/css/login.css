@@ -82,7 +82,7 @@ body {
      width: 100%;
      margin-bottom: 21px;
    }
-   .login input[type="login"], input[type="senha"] {
+   .login input[type="usuario"], input[type="password"] {
      border: none;
      border-bottom: 1px solid white;
      background:transparent;
