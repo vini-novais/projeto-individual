@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se cadastre e terá novidades!</title>
+    <link rel="sortcut icon" href="./imagem/icone.png" type="image/png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/cadastro.css">
+</head>
+
+<body>
+    <!-- Login -->
+    <div class="showcase7">
+        <div class="container">
+            <div class="cadastro">
+                <a href="index.html"><img src="./imagem/icone_login.png" alt="" class="usuario"></a>
+                <h6>Cadastro</h6>
+
+                <form id="form_cadastro" method="post" onsubmit= "return cadastrar()">
+                    <p>E-mail</p>
+                    <input type="email" name="email" placeholder="Insira um email válido">
+                    <p>Usuário</p>
+                    <input type="usuario" name="usuario" placeholder="Insira seu nome de usuário" required minlength="4">
+                    <p>Senha</p>
+                    <input type="password" name="senha" placeholder="Insira sua senha" required minlength="4">
+                    <button type="submit">Finalizar cadastro</button>
+                    <a href="">Esqueceu sua senha?</a> <br>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    
+    function cadastrar() {
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+            
+            if (response.ok) {
+                window.location.href='login.html';
+
+            } else {
+                console.log('Erro de cadastro!');
+                response.text().then(function(resposta) {
+                    alert(resposta)
+                });
+            }
+        });
+
+        return false;
+    }
+
+</script>

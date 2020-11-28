@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre e conheça os artistas!</title>
+    <link rel="sortcut icon" href="./imagem/icone.png" type="image/png">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <!-- Login -->
+    <div class="showcase6">
+        <div class="container">
+            <div class="login">
+                <a href="index.html"><img src="./imagem/icone_login.png" alt="" class="usuario"></a>
+                <h6>Login</h6>
+
+                <form id="form_login" method="post" onsubmit="return entrar()">
+                    <p>Usuário</p>
+                    <input type="usuario" id="usuario" name="usuario" onkeyup="validar_usuario()" placeholder="Insira seu nome de usuário">
+                    <p>Senha</p>
+                    <input type="password" id="senha" name="senha" onkeyup="validar_senha()" placeholder="Insira sua senha">
+                    <button type="submit">Login</button>
+                    <a href="cadastro.html">Ainda não possui uma conta?</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    
+    function entrar() {
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+
+                    window.location.href = 'albuns.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizar_aguardar(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+    function validar_senha() {
+        var senhaa = senha.value;
+        if (senhaa.length >= 8) {
+            senha.style = `border-color: green`;
+
+        } else {
+            senha.style = 'border-color:red';
+        }
+    }
+    function validar_usuario() {
+        var usuarioo = usuario.value;
+        if (usuarioo.length >= 5) {
+            usuario.style = `border-color: green`;
+
+        } else {
+            usuario.style = 'border-color:red';
+        }
+    }
+</script>
