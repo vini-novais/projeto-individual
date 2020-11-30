@@ -182,8 +182,9 @@ body {
     font-size: 15px;
     color: white;
     margin-top: 83px;
-    margin-left: 91px;
+    margin-left: 102px;
     margin-right: 196px;
+    text-align: justify;
   }
   .sobremim2 {
     width: 1026px;
@@ -206,6 +207,7 @@ body {
     margin-top: 22px;
     margin-left: 91px;
     margin-right: 196px;
+    text-align: justify;
   }
   .sobremim3 {
     width: 1026px;
@@ -228,6 +230,7 @@ body {
     margin-top: 22px;
     margin-left: 91px;
     margin-right: 196px;
+    text-align: justify;
   }
   /* SHOWCASE 5 */
   /* Fim QUEM SOMOS */

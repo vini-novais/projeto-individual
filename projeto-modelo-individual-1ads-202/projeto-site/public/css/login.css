@@ -99,7 +99,8 @@ body {
     border-radius: 20px;
     transition: 0.2s;
     margin-left: -1px;
-    width: 210px;
+    width: 224px;
+    margin-top: 15px;
   }
   .login button:hover {
     cursor:pointer;

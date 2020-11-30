@@ -20,15 +20,14 @@
 
                 <form id="form_cadastro" method="post" onsubmit= "return cadastrar()">
                     <p>E-mail</p>
-                    <input type="email" name="email" placeholder="Insira um email válido">
+                    <input type="email" required id="email" name="email" onkeyup="validar_email()" placeholder="Insira um email válido">
                     <p>Usuário</p>
-                    <input type="usuario" name="usuario" placeholder="Insira seu nome de usuário" required minlength="4">
+                    <input type="usuario" id="usuario" name="usuario" onkeyup="validar_usuario1()" placeholder="Insira um nome de usuário válido" required minlength="4">
                     <p>Senha</p>
-                    <input type="password" name="senha" placeholder="Insira sua senha" required minlength="4">
+                    <input type="password" id="senha" name="senha" onkeyup="validar_senha1()" placeholder="Insira uma senha válida" required minlength="4">
                     <button type="submit">Finalizar cadastro</button>
-                    <a href="">Esqueceu sua senha?</a> <br>
                 </form>
-
+                
             </div>
         </div>
     </div>
@@ -57,6 +56,39 @@
         });
 
         return false;
+    }
+    function validar_email(){
+            var emaill = email.value;
+            if(emaill.includes('@') == true && emaill.includes('.com') == true){
+                email.style = 'border-color:green';
+                
+                
+            }else{
+                email.style = 'border-color:red'
+                
+            }
+        }
+    
+    function validar_senha1() {
+        var senhaa = senha.value;
+        if (senhaa.length >= 8) {
+            senha.style = `border-color: green`;
+            
+        } else {
+            senha.style = 'border-color:red';
+            
+        }
+    }
+    function validar_usuario1() {
+        var usuarioo = usuario.value;
+        if (usuarioo.length >= 5) {
+            usuario.style = `border-color: green`;
+            
+
+        } else {
+            usuario.style = 'border-color:red';
+            
+        }
     }
 
 </script>
