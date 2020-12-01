@@ -25,8 +25,10 @@
                     </li>
                     <li><a href="index.html">Início&#127908;</a></li>
                     <li class="Pagina"><a href="quem_somos.html">Quem somos&#127911;</a></li>
-                    <li><a href="albuns.html">Tem um artista preferido?&#128276;</a></li>
-                    <audio src="./musica/sabota.mp3" autoplay controls loop> </audio>
+                    <li><a href="albuns.html">Artista preferido?&#128276;</a></li>
+                    <audio id="video" src="./musica/sabota.mp3" controls loop> </audio>
+                    <li><p id="logou"></p></li>
+                    <li><button style='margin-left: -15px' onclick="sair()">Logout</button></li>
                 </ul>
             </div>
         </div>
@@ -222,7 +224,16 @@
 
 </html>
 <script>
-
-
-    
+    usuariox ()
+    function usuariox () {
+      let nome_usuario = sessionStorage.getItem('nome_usuario')
+        if (nome_usuario != undefined) {
+            video.style = 'display: none';
+            logou.innerHTML += `Olá, ${nome_usuario}`
+        }         
+    }
+    function sair() {
+       sessionStorage.clear()
+       window.location.href = 'index.html'
+    }
 </script>

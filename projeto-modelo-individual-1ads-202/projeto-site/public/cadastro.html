@@ -20,11 +20,17 @@
 
                 <form id="form_cadastro" method="post" onsubmit= "return cadastrar()">
                     <p>E-mail</p>
-                    <input type="email" required id="email" name="email" onkeyup="validar_email()" placeholder="Insira um email válido">
+                    <input type="email" required id="email" name="email" onkeyup="validar_email()" 
+                    placeholder="Insira um email válido">
+
                     <p>Usuário</p>
-                    <input type="usuario" id="usuario" name="usuario" onkeyup="validar_usuario1()" placeholder="Insira um nome de usuário válido" required minlength="4">
+                    <input type="usuario" id="usuario" name="usuario" onkeyup="validar_usuario1()"
+                     placeholder="Insira um nome de usuário válido" required minlength="4">
+
                     <p>Senha</p>
-                    <input type="password" id="senha" name="senha" onkeyup="validar_senha1()" placeholder="Insira uma senha válida" required minlength="4">
+                    <input type="password" id="senha" name="senha" onkeyup="validar_senha1()"
+                     placeholder="Insira uma senha válida" required minlength="4">
+                     
                     <button type="submit">Finalizar cadastro</button>
                 </form>
                 
@@ -71,7 +77,7 @@
     
     function validar_senha1() {
         var senhaa = senha.value;
-        if (senhaa.length >= 8) {
+        if (senhaa.length >= 4) {
             senha.style = `border-color: green`;
             
         } else {
@@ -81,7 +87,7 @@
     }
     function validar_usuario1() {
         var usuarioo = usuario.value;
-        if (usuarioo.length >= 5) {
+        if (usuarioo.length >= 4) {
             usuario.style = `border-color: green`;
             
 

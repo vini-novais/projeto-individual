@@ -23,10 +23,12 @@
                         <h2>&#119978; &#8475;&#119990;&#120005;
                             &#119982;&#119990;&#120001;&#120011;&#119990;! &#129304;</h2>
                     </li>
-                    <li class="Pagina"><a href="index.html">Início&#127908;</a></li>
-                    <li><a href="quem_somos.html">Quem somos&#127911;</a></li>
-                    <li><a href="login.html">Tem um artista preferido?&#128276;</a></li>
-                    <audio src="./musica/rincon.mp3" autoplay controls loop> </audio>
+                    <li><a href="index.html">Início&#127908;</a></li>
+                    <li class="Pagina"><a href="quem_somos.html">Quem somos&#127911;</a></li>
+                    <li><a href="login.html">Artista preferido?&#128276;</a></li>
+                    <audio id="video" src="./musica/sabota.mp3" controls loop> </audio>
+                    <li><p id="logou"></p></li>
+                    <li style='display:none' id="botaosair" ><button style='float:right; margin-top: -43px'onclick="sair()">Logout</button></li>
                 </ul>
             </div>
         </div>
@@ -38,14 +40,14 @@
         <div class="container">
             <h1 class="glow">Por que o rap salva vidas?</h1>
             <p> Desde a chegada do Rap no Brasil, escutamos a frase: “O Rap salva vidas”
-                O gênero musical Rap, alcançou a periferia do território brasileiro,
-                e com isso, todas as problemáticas que envolvem o povo que vive lá. </p>
+                O <span>gênero musical Rap</span>, alcançou a periferia do território brasileiro,
+                e com isso, todas as <span>problemáticas</span> que envolvem o povo que vive lá. </p>
 
-            <p> A cultura periférica começa a fazer parte dessa atmosfera.
-                Educando, livrando e transformando jovens!
-                Os mesmos que antes presos nas drogas, no crime,
-                na violência ou até na depressão (carma de um sistema falido e racista),
-                sentem-se acolhidos pelo Rap. </p>
+            <p> A cultura periférica começa a <span>fazer parte</span> dessa atmosfera.
+                <span>Educando, livrando e transformando</span> jovens!
+                Os mesmos que antes presos nas <span>drogas, no crime,
+                na violência ou até na depressão</span> (carma de um sistema falido e racista),
+                sentem-se <span>acolhidos pelo Rap.</span> </p>
 
             <p> “Cultura periférica é identificação!”</p>
             <div class="album1">
@@ -63,7 +65,7 @@
             <h5 class="glow"> O sabotagem e seu legado deixado </h5>
             <video autoplay controls loop src="./musica/sabotagem.mp4"></video>
 
-            <p> Já faz 14 anos que o <span>Mestre Sabota</span> nos deixou. Um cara com uma
+            <p> Já faz 17 anos que o <span>Mestre Sabota</span> nos deixou. Um cara com uma
                 <span>mentalidade lúcida</span> e diferenciada, e que teve um <span>papel importantíssimo</span>
                 não só para a cultura hip hop, mas para a <span>representatividade</span> na música.
                 Sabotage foi responsável por dar “voz e holofote” á favela do Canão principalmente na faixa "O bom
@@ -88,21 +90,21 @@
     <div class="showcase3">
         <div class="container">
             <h5 class="glow">A cultura da periferia ainda vive!</h5>
-            <p>o hip-hop começou a se unir para o próprio entretenimento
-                das comunidades, o rap se expandia e de piada e zoação se
-                construíam rimas pesadas, métricas afiadas e então temos uma nova “modalidade”
-                no rap.</p>
+            <p>o hip-hop começou a se <span>unir</span> para o próprio entretenimento
+                das comunidades, o rap se <span>expandia</span> e de piada e zoação se
+                construíam <span>rimas pesadas, métricas afiadas</span> e então temos uma nova <span>“modalidade”
+                no rap.</span></p>
 
-            <p>Além da aproximação com a cultura hip hop, as batalhas de
-                rima também são um convite para quem se interessa por música,
-                literatura, poesia e questões de identidade e representatividade.</p>
+            <p> Além da <span>aproximação</span> com a cultura hip hop, as batalhas de
+                rima também são um <span>convite</span> para quem se interessa por música,
+                literatura, poesia e questões de <span>identidade e representatividade</span>.</p>
 
-            <p>Era não só divertido mas também uma forma de ganhar nome,
-                de praticar as habilidades. MC´s de diferentes idades e regiões
-                vinham testar seu improvisado, tomando cuidado pra respeitar a
-                quebrada do outro mas dando seu melhor numa lírica agressiva,
-                controlavam o tempo pra cada participante jogar as punchlines no
-                outro e o placar eram as palmas da plateia.</p>
+            <p> Era não só divertido mas também uma forma de <span>ganhar nome</span>,
+                de praticar as habilidades. <span>MC´s de diferentes idades e regiões
+                vinham testar seu improvisado</span>, tomando cuidado pra respeitar a
+                quebrada do outro mas dando seu melhor numa <span>lírica agressiva</span>,
+                controlavam o tempo pra cada <span>participante</span> jogar as punchlines no
+                outro e o placar eram as <span>palmas da plateia.</span></p>
 
             <div class="info2">
                 <iframe src="https://www.youtube.com/embed/06grczVYkws" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
@@ -131,3 +133,22 @@
 </body>
 
 </html>
+<script>
+    usuariox ()
+    function usuariox () {
+      let nome_usuario = sessionStorage.getItem('nome_usuario')
+        if (nome_usuario == undefined) {
+            logou.style = 'display: none';
+            botaosumir.style = 'display: none';
+        }
+        else {
+            logou.innerHTML = `Olá, ${nome_usuario}`;
+            video.style = 'display: none';
+            botaosair.style = 'display:block';
+        }          
+    }
+    function sair() {
+       sessionStorage.clear()
+       window.location.href = 'index.html'
+    }
+</script>

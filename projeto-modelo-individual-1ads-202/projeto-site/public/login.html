@@ -20,9 +20,9 @@
 
                 <form id="form_login" method="post" onsubmit="return entrar()">
                     <p>Usuário</p>
-                    <input type="usuario" id="usuario" name="usuario" onkeyup="validar_usuario()" placeholder="Insira seu nome de usuário">
+                    <input type="usuario" id="usuario" name="usuario" onkeyup="validar_usuario()" placeholder="Insira seu nome de usuário" required minlength="4">
                     <p>Senha</p>
-                    <input type="password" id="senha" name="senha" onkeyup="validar_senha()" placeholder="Insira sua senha">
+                    <input type="password" id="senha" name="senha" onkeyup="validar_senha()" placeholder="Insira sua senha" required minlength="4">
                     <button type="submit">Login</button>
                     <a href="cadastro.html">Ainda não possui uma conta?</a>
                 </form>
@@ -34,7 +34,15 @@
 
 </html>
 <script>
-    
+        noexit()
+    function noexit() {
+        let nome_usuario = sessionStorage.getItem('nome_usuario');
+        if (nome_usuario != undefined) {
+            window.location.href = 'albuns.html'
+        } else {
+            
+        }
+    }
     function entrar() {
         var formulario = new URLSearchParams(new FormData(form_login));
         fetch("/usuarios/autenticar", {
@@ -47,7 +55,7 @@
                 resposta.json().then(json => {
 
                     sessionStorage.login_usuario_meuapp = json.login;
-                    sessionStorage.nome_usuario_meuapp = json.nome;
+                    sessionStorage.nome_usuario = json.usuario;
 
                     window.location.href = 'albuns.html';
                 });
@@ -67,7 +75,7 @@
     }
     function validar_senha() {
         var senhaa = senha.value;
-        if (senhaa.length >= 8) {
+        if (senhaa.length >= 4) {
             senha.style = `border-color: green`;
 
         } else {
@@ -76,11 +84,12 @@
     }
     function validar_usuario() {
         var usuarioo = usuario.value;
-        if (usuarioo.length >= 5) {
+        if (usuarioo.length >= 4) {
             usuario.style = `border-color: green`;
 
         } else {
             usuario.style = 'border-color:red';
         }
     }
+
 </script>
