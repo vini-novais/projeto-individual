@@ -25,6 +25,7 @@
                     <input type="password" id="senha" name="senha" onkeyup="validar_senha()" placeholder="Insira sua senha" required minlength="4">
                     <button type="submit">Login</button>
                     <a href="cadastro.html">Ainda não possui uma conta?</a>
+                    <center><img style="display:none;" id="gif"  src="./imagem/gicarregando.gif" alt=""></center>
                 </form>
             </div>
         </div>
@@ -44,6 +45,7 @@
         }
     }
     function entrar() {
+        gif.style = "display:block; width:30px; height:30px;"
         var formulario = new URLSearchParams(new FormData(form_login));
         fetch("/usuarios/autenticar", {
             method: "POST",

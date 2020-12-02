@@ -32,6 +32,7 @@
                      placeholder="Insira uma senha válida" required minlength="4">
                      
                     <button type="submit">Finalizar cadastro</button>
+                    <center><img style="display:none;" id="gif"  src="./imagem/gicarregando.gif" alt=""></center>
                 </form>
                 
             </div>
@@ -44,6 +45,7 @@
 <script>
     
     function cadastrar() {
+        gif.style = "display:block; width:30px; height:30px;"
         var formulario = new URLSearchParams(new FormData(form_cadastro));
         fetch("/usuarios/cadastrar", {
             method: "POST",

@@ -85,6 +85,13 @@ body {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
 }
+.nav li button {
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  width: 73px;
+  cursor: pointer;
+}
 
  .nav img {
     height: 18px;
